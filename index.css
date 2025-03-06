@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: whitesmoke;
+  position: relative;
+}
+.main-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  /* height: 25vh; */
+  width: 65%;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  /* padding: 10px; */
+  /* height: 100%; */
+}
+img {
+  max-width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  height: 235px;
+  width: 900px;
+  border-radius: 0.5rem 0 0 0.5rem;
+  /* margin-left: 50px; */
+  /* object-fit: cover; */
+
+}
+.image-div{
+    height: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* margin-top: 10px; */
+  background: white;
+  height: 235px;
+  width: 1200px;
+  /* position: relative; */
+  gap: 1rem;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  #share {
+    /* width: 10px; */
+    /* height: 10px; */
+    img {
+      background: white;
+      outline: none;
+      height: 20px;
+      width: 20px;
+      /* color: rgb(255, 255, 255); */
+    }
+  }
+  .name {
+    color: gray;
+  }
+}
+.main-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+/* h3{
+    color: gray;
+} */
+.date {
+  color: rgb(10, 8, 8);
+}
+button {
+  height: 30px;
+  width: 30px;
+  outline: 1px solid white;
+  border-radius: 50%;
+  background: gray;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  color: gray;
+}
+#share-options {
+  /* display: flex; */
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  padding: 5px;
+  border-radius: 0.5rem;
+  width: 230px;
+  position: absolute;
+  top: -2rem;
+  right: -6rem;
+  display: none;
+  &.active{
+    display: flex;
+  }
+  /* height: 350px; */
+  /* max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-out; */
+  img {
+    height: 20px;
+    width: 20px;
+    outline: 1px solid white;
+    background: gray;
+    cursor: pointer;
+    border: none;
+  }
+  /* &.active {
+    max-height: 5rem;
+    transition: max-height 0.6s ease-in;
+  } */
+}
+
+.share-container{
+position: relative;
+}
